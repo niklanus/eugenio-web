@@ -1,0 +1,32 @@
+$gray: #373739;
+$darkgray: #212121;
+$blue: #187fdf;
+$blue-alpha: rgba(24,127,223,0.9);
+$blue-alpha2: rgba(24,127,223,0.7);
+
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin hover {
+  -webkit-transition: all 250ms;
+  -moz-transition:    all 250ms;
+  -o-transition:      all 250ms;
+  transition:         all 250ms;
+}
+
+@mixin hover-medium {
+  -webkit-transition: all 350ms;
+  -moz-transition:    all 350ms;
+  -o-transition:      all 350ms;
+  transition:         all 350ms;
+}
+
+@mixin hover-slow {
+  -webkit-transition: all 500ms;
+  -moz-transition:    all 500ms;
+  -o-transition:      all 500ms;
+  transition:         all 500ms;
+}
