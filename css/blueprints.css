@@ -1897,6 +1897,142 @@ td, th {
   height: auto;
   border: 1px solid transparent; }
 
+/**
+ * Featherlight – ultra slim jQuery lightbox
+ * Version 1.2.0 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+@media all {
+  /* support for nested featherlights. Does not work in IE8 (use JS to fix) */
+  /* contains the content */
+  .featherlight {
+    display: none;
+    /* dimensions: spanning the background from edge to edge */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    /* position: centering content */
+    text-align: center;
+    /* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
+    white-space: nowrap;
+    /* styling */
+    cursor: pointer;
+    background: #333;
+    /* IE8 "hack" for nested featherlights */
+    background: rgba(0, 0, 0, 0); }
+  .featherlight:last-of-type {
+    background: rgba(0, 0, 0, 0.8); }
+  .featherlight:before {
+    /* position: trick to center content vertically */
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; }
+  .featherlight .featherlight-content {
+    /* make content container for positioned elements (close button) */
+    position: relative;
+    /* position: centering vertical and horizontal */
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    /* dimensions: cut off images */
+    overflow: auto;
+    /* dimensions: handling small or empty content */
+    /* dimensions: handling large content */
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 95%;
+    /* styling */
+    background: #fff;
+    cursor: auto;
+    /* reset white-space wrapping */
+    white-space: normal; }
+  .featherlight .featherlight-inner {
+    /* make sure its visible */
+    display: block; }
+  .featherlight .featherlight-close-icon {
+    /* position: centering vertical and horizontal */
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    /* dimensions: 25px x 25px */
+    line-height: 25px;
+    width: 25px;
+    /* styling */
+    cursor: pointer;
+    text-align: center;
+    font: Arial, sans-serif;
+    background: #fff;
+    /* Set the background in case it overlaps the content */
+    background: rgba(255, 255, 255, 0.3);
+    color: #000; }
+  .featherlight .featherlight-image {
+    /* styling */
+    width: 100%; }
+  .featherlight-iframe .featherlight-content {
+    /* removed the border for image croping since iframe is edge to edge */
+    border-bottom: 0;
+    padding: 0; }
+  .featherlight iframe {
+    /* styling */
+    border: none; } }
+
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+  .featherlight .featherlight-content {
+    /* dimensions: maximize lightbox with for small screens */
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 98%; } }
+
+.cirugia-iframe {
+  width: 767px;
+  background-color: white; }
+
+@media only screen and (max-width: 850px) {
+  .cirugia-iframe {
+    width: 600px; } }
+
+@media only screen and (max-width: 640px) {
+  .cirugia-iframe {
+    width: 500px; } }
+
+@media only screen and (max-width: 540px) {
+  .cirugia-iframe {
+    width: 400px; } }
+
+@media only screen and (max-width: 440px) {
+  .cirugia-iframe {
+    width: 320px; } }
+
+.cirugia-iframe-close {
+  display: block;
+  background-color: #187fdf;
+  color: white;
+  padding: 7px 0 9px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  -webkit-transition: all 250ms;
+  transition: all 250ms; }
+
+.cirugia-iframe-container {
+  padding: 30px; }
+  .cirugia-iframe-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside; }
+    .cirugia-iframe-container ul li {
+      margin-bottom: 5px; }
+
 .waves-effect {
   position: relative;
   cursor: pointer;
@@ -2173,6 +2309,7 @@ h4.main-title {
           display: none; } }
 
 nav {
+  background-color: white;
   background-color: rgba(255, 255, 255, 0.8);
   color: #212121;
   font-size: 1em;

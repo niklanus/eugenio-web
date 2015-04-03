@@ -6,6 +6,7 @@
 @import 'components/grid';
 @import 'components/utilities';
 @import 'components/slick';
+@import 'components/featherlight';
 @import 'components/waves';
 
 body {
@@ -272,6 +273,7 @@ h4.main-title {
 }
 
 nav {
+	background-color: white;
 	background-color: rgba(255,255,255,0.8);
 	color: $darkgray;
 	font-size: 1em;
