@@ -2370,7 +2370,7 @@ nav {
 .nav-mobile {
   padding: 0; }
   .nav-mobile .nav-items {
-    max-height: 300px;
+    max-height: 250px;
     background-clip: padding-box;
     overflow: hidden;
     clear: both;
@@ -2452,7 +2452,8 @@ section.intro {
       section.intro .intro-item {
         height: auto;
         background: url(../img/mobile-bg.jpg) no-repeat 50% 50% !important;
-        background-size: cover; } }
+        background-size: cover;
+        text-align: center; } }
     section.intro .intro-item .intro-item-content {
       width: 100%;
       position: absolute;
@@ -2477,8 +2478,8 @@ section.intro {
         section.intro .intro-item .intro-eugenio {
           display: none; } }
   section.intro .intro-text {
-    max-width: 560px;
-    font-size: 2.2em;
+    max-width: 690px;
+    font-size: 2.1em;
     letter-spacing: -0.02em;
     color: white;
     text-shadow: 0px 0px 45px rgba(0, 0, 0, 0.95); }
@@ -2486,10 +2487,16 @@ section.intro {
       font-weight: 600; }
     @media only screen and (max-width: 640px) {
       section.intro .intro-text {
-        font-size: 1.8em; } }
-    @media only screen and (max-width: 340px) {
+        font-size: 1.6em;
+        text-align: center; }
+        section.intro .intro-text br {
+          display: none; } }
+    @media only screen and (max-width: 500px) {
       section.intro .intro-text {
-        font-size: 1.6em; } }
+        font-size: 1.4em; } }
+    @media only screen and (max-width: 400px) {
+      section.intro .intro-text {
+        font-size: 1.3em; } }
 
 .intro-clear {
   width: 100%;
@@ -2527,6 +2534,8 @@ section.intro {
         background-image: url(../img/consulta-1.jpg); }
       .consulta-main .slider .consulta-slider-img.img-2 {
         background-image: url(../img/consulta-2.jpg); }
+      .consulta-main .slider .consulta-slider-img.img-3 {
+        background-image: url(../img/consulta-3.jpg); }
     .consulta-main .slider .slick-track, .consulta-main .slider .slick-list {
       height: 100%; }
   @media only screen and (max-width: 1500px) {
@@ -2572,15 +2581,15 @@ section.intro {
   .cirugia-part h2 {
     text-align: center;
     padding-bottom: 20px; }
-  .cirugia-part.estetica {
+  .cirugia-part.reparadora {
     background: #eaeaea url(../img/estetica-bg.jpg) no-repeat 50% 50%;
     background-size: cover; }
-  .cirugia-part.reparadora {
+  .cirugia-part.estetica {
     background: #187fdf url(../img/reparadora-bg.jpg) no-repeat 50% 50%;
     background-size: cover; }
-    .cirugia-part.reparadora h2 {
+    .cirugia-part.estetica h2 {
       color: white; }
-    .cirugia-part.reparadora .slick-prev, .cirugia-part.reparadora .slick-next {
+    .cirugia-part.estetica .slick-prev, .cirugia-part.estetica .slick-next {
       color: white; }
   .cirugia-part .cirugia-carousel {
     padding: 0 30px; }

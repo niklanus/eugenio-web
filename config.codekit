@@ -164,6 +164,17 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/img\/_DSC1678-Editar.png": {
+		"fileType": 32768,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/_DSC1678-Editar.png",
+		"outputAbbreviatedPath": "\/img\/_DSC1678-Editar.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/chouhy.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -195,7 +206,7 @@
 		"outputAbbreviatedPath": "\/img\/cirugia-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/cirugia-2.jpg": {
 		"fileType": 16384,
@@ -206,7 +217,7 @@
 		"outputAbbreviatedPath": "\/img\/cirugia-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/cirugia-3.jpg": {
 		"fileType": 16384,
@@ -217,7 +228,7 @@
 		"outputAbbreviatedPath": "\/img\/cirugia-3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/close-quote.png": {
 		"fileType": 32768,
@@ -228,7 +239,7 @@
 		"outputAbbreviatedPath": "\/img\/close-quote.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/close-quote@2x.png": {
 		"fileType": 32768,
@@ -239,7 +250,7 @@
 		"outputAbbreviatedPath": "\/img\/close-quote@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/consulta-1.jpg": {
 		"fileType": 16384,
@@ -250,7 +261,7 @@
 		"outputAbbreviatedPath": "\/img\/consulta-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/consulta-2.jpg": {
 		"fileType": 16384,
@@ -261,7 +272,7 @@
 		"outputAbbreviatedPath": "\/img\/consulta-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/dialog-decoration-alt.png": {
 		"fileType": 32768,
@@ -272,7 +283,7 @@
 		"outputAbbreviatedPath": "\/img\/dialog-decoration-alt.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/dialog-decoration-alt@2x.png": {
 		"fileType": 32768,
@@ -283,7 +294,7 @@
 		"outputAbbreviatedPath": "\/img\/dialog-decoration-alt@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/dialog-decoration.png": {
 		"fileType": 32768,
@@ -294,7 +305,7 @@
 		"outputAbbreviatedPath": "\/img\/dialog-decoration.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/dialog-decoration@2x.png": {
 		"fileType": 32768,
@@ -305,7 +316,7 @@
 		"outputAbbreviatedPath": "\/img\/dialog-decoration@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/estetica-bg.jpg": {
 		"fileType": 16384,
@@ -316,7 +327,7 @@
 		"outputAbbreviatedPath": "\/img\/estetica-bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/header-logo.png": {
 		"fileType": 32768,
@@ -327,7 +338,7 @@
 		"outputAbbreviatedPath": "\/img\/header-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/header-logo@2x.png": {
 		"fileType": 32768,
@@ -338,7 +349,7 @@
 		"outputAbbreviatedPath": "\/img\/header-logo@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/intro-slider-bg-1.jpg": {
 		"fileType": 16384,
@@ -349,7 +360,7 @@
 		"outputAbbreviatedPath": "\/img\/intro-slider-bg-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/intro-slider-bg-1@2x.jpg": {
 		"fileType": 16384,
@@ -360,13 +371,13 @@
 		"outputAbbreviatedPath": "\/img\/intro-slider-bg-1@2x.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/intro-slider-eugenio-1.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 257951,
+		"initialSize": 225010,
 		"inputAbbreviatedPath": "\/img\/intro-slider-eugenio-1.png",
 		"outputAbbreviatedPath": "\/img\/intro-slider-eugenio-1.png",
 		"outputPathIsOutsideProject": 0,
@@ -382,7 +393,7 @@
 		"outputAbbreviatedPath": "\/img\/mobile-bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/nav-logo.png": {
 		"fileType": 32768,
@@ -393,7 +404,7 @@
 		"outputAbbreviatedPath": "\/img\/nav-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/nav-logo@2x.png": {
 		"fileType": 32768,
@@ -404,7 +415,7 @@
 		"outputAbbreviatedPath": "\/img\/nav-logo@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/open-quote.png": {
 		"fileType": 32768,
@@ -415,7 +426,7 @@
 		"outputAbbreviatedPath": "\/img\/open-quote.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/open-quote@2x.png": {
 		"fileType": 32768,
@@ -426,7 +437,7 @@
 		"outputAbbreviatedPath": "\/img\/open-quote@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/reparadora-bg.jpg": {
 		"fileType": 16384,
@@ -437,7 +448,7 @@
 		"outputAbbreviatedPath": "\/img\/reparadora-bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,

@@ -353,7 +353,7 @@ nav {
 
 	.nav-items {
 		//display: none;
-		max-height: 300px;
+		max-height: 250px;
 		background-clip: padding-box;
 		overflow: hidden;
 		clear: both;
@@ -465,6 +465,7 @@ section.intro {
 			height: auto;
 			background: url(../img/mobile-bg.jpg) no-repeat 50% 50% !important;
 			background-size: cover;
+			text-align: center;
 		}
 
 		.intro-item-content {
@@ -498,8 +499,8 @@ section.intro {
 	}
 
 	.intro-text {
-		max-width: 560px;
-		font-size: 2.2em;
+		max-width: 690px;
+		font-size: 2.1em;
 		letter-spacing: -0.02em;
 		color: white;
 		text-shadow: 0px 0px 45px rgba(0,0,0,0.95);
@@ -509,11 +510,20 @@ section.intro {
 		}
 
 		@media only screen and (max-width : 640px) {
-			font-size: 1.8em;
+			font-size: 1.6em;
+			text-align: center;
+
+			br {
+				display: none;
+			}
 		}
 
-		@media only screen and (max-width : 340px) {
-			font-size: 1.6em;
+		@media only screen and (max-width : 500px) {
+			font-size: 1.4em;
+		}
+
+		@media only screen and (max-width : 400px) {
+			font-size: 1.3em;
 		}
 	}
 }
@@ -570,6 +580,9 @@ section.intro {
 			}
 			&.img-2 {
 				background-image: url(../img/consulta-2.jpg);
+			}
+			&.img-3 {
+				background-image: url(../img/consulta-3.jpg);
 			}
 		}
 
@@ -650,12 +663,12 @@ section.intro {
 		padding-bottom: 20px;
 	}
 
-	&.estetica {
+	&.reparadora {
 		background: #eaeaea url(../img/estetica-bg.jpg) no-repeat 50% 50%;
 		background-size: cover; 
 	}
 
-	&.reparadora {
+	&.estetica {
 		background: $blue url(../img/reparadora-bg.jpg) no-repeat 50% 50%;
 		background-size: cover;
 
