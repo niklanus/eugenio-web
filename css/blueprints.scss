@@ -56,6 +56,15 @@ a{
 			&:hover {
 				background-color: darken($blue,10);
 			}
+
+			&.btn-disabled {
+				opacity: 0.4;
+				cursor: no-drop;
+				
+				&:hover {
+					background-color: $blue !important;
+				}
+			}
 		}
 	}
 }
@@ -209,7 +218,37 @@ h4.main-title {
 			top: auto;
 		}
 	}
+}
 
+.dropdown-container {
+	position: relative;
+
+	span {
+		line-height: 0;
+	}
+}
+
+.dropdown-items {
+	width: 100%;
+	display: none;
+	position: absolute;
+	background-color: white;
+	left: 0px;
+	top: 70px;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+
+	li {
+		display: block !important;
+		float: none !important;
+
+		a {
+			width: 100%;
+			text-align: left;
+			display: block !important;
+		}
+	}
 }
 
 .info-bar {
@@ -287,11 +326,25 @@ nav {
 	@include hover-slow;
 
 	.nav-items {
+		width: 880px;
+		float: right;
 		padding: 0;
 		margin: 0;
+		position: relative;
+		left: 8px;
+
+		@media only screen and (max-width : 1160px) {
+			width: 762px;
+		}
+
+		@media only screen and (max-width : 1023px) {
+			width: 100%;
+			float: none;
+		}
 
 		li {
 			display: inline-block;
+			float: left;
 
 			a {
 				display: inline-block;
@@ -359,15 +412,17 @@ nav {
 		clear: both;
 		-webkit-transform: translate3d(0, 0, 0);
 		@include hover-slow;
+		left: auto;
 
-		li {
+		> li {
 			display: block;
 			width: 100%;
 
-			a {
+			> a {
 				display: block;
 				padding: 24px 30px;
 				background-color: rgba(255,255,255,0.8);
+				text-align: right;
 
 				@media only screen and (max-width : 640px) {
 					background-color: rgba(255,255,255,0.95);
@@ -384,12 +439,33 @@ nav {
 		}
 
 		&.hidden {
-			max-height: 0px;
+			max-height: 0px !important;
+		}
+
+		&.height-extended {
+			max-height: 434px;
 		}
 	}
 
 	.nav-trigger {
 		display: inline-block;
+	}
+
+	.dropdown-items {
+		box-shadow: none;
+		position: relative;
+		top: auto;
+		background-color: rgba(255,255,255,0.95);
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+
+		li {
+			a {
+				text-align: right;
+				padding: 24px 30px;
+			}
+		}
 	}
 }
 
@@ -454,16 +530,13 @@ section.intro {
 		background-size: cover;
 
 		&.item-1 {
-			background-image: url(../img/intro-slider-bg-1.jpg);
-
-			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-				background-image: url(../img/intro-slider-bg-1@2x.jpg);
-			}
+			background-image: url(../img/intro-bg.jpg);
+			background-position: 90% 50%;
 		}
 
 		@media only screen and (max-width : 640px) {
 			height: auto;
-			background: url(../img/mobile-bg.jpg) no-repeat 50% 50% !important;
+			background-image: url(../img/intro-bg-mobile.jpg) !important;
 			background-size: cover;
 			text-align: center;
 		}
@@ -584,6 +657,10 @@ section.intro {
 			&.img-3 {
 				background-image: url(../img/consulta-3.jpg);
 			}
+			&.img-4 {
+				background-image: url(../img/consulta-4.jpg);
+				background-position: 100% 100%;
+			}
 		}
 
 		.slick-track, .slick-list {
@@ -679,6 +756,35 @@ section.intro {
 		.slick-prev, .slick-next {
 			color: white;
 		}
+	}
+
+	&.microcirugia {
+		background: black url(../img/microcirugia-bg.jpg) no-repeat 50% 50%;
+		background-size: cover;
+		text-align: center;
+
+		@media only screen and (max-width : 991px) {
+			background-image: url(../img/microcirugia-bg-mobile.jpg);
+		}
+
+		h2, p {
+			color: white;
+		}
+
+		p {
+			font-size: 1.2em;
+			margin-bottom: 40px;
+			padding: 0 20px;
+
+			@media only screen and (max-width : 400px) {
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	&.sanatorios {
+		background: #eaeaea url(../img/estetica-bg.jpg) no-repeat 50% 50%;
+		background-size: cover; 
 	}
 
 	.cirugia-carousel {

@@ -1897,105 +1897,89 @@ td, th {
   height: auto;
   border: 1px solid transparent; }
 
-/**
- * Featherlight – ultra slim jQuery lightbox
- * Version 1.2.0 - http://noelboss.github.io/featherlight/
- *
- * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
- * MIT Licensed.
-**/
-@media all {
-  /* support for nested featherlights. Does not work in IE8 (use JS to fix) */
-  /* contains the content */
-  .featherlight {
-    display: none;
-    /* dimensions: spanning the background from edge to edge */
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    /* position: centering content */
-    text-align: center;
-    /* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
-    white-space: nowrap;
-    /* styling */
-    cursor: pointer;
-    background: #333;
-    /* IE8 "hack" for nested featherlights */
-    background: rgba(0, 0, 0, 0); }
-  .featherlight:last-of-type {
-    background: rgba(0, 0, 0, 0.8); }
-  .featherlight:before {
-    /* position: trick to center content vertically */
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em; }
-  .featherlight .featherlight-content {
-    /* make content container for positioned elements (close button) */
-    position: relative;
-    /* position: centering vertical and horizontal */
-    text-align: left;
-    vertical-align: middle;
-    display: inline-block;
-    /* dimensions: cut off images */
-    overflow: auto;
-    /* dimensions: handling small or empty content */
-    /* dimensions: handling large content */
-    margin-left: 5%;
-    margin-right: 5%;
-    max-height: 95%;
-    /* styling */
-    background: #fff;
-    cursor: auto;
-    /* reset white-space wrapping */
-    white-space: normal; }
-  .featherlight .featherlight-inner {
-    /* make sure its visible */
-    display: block; }
-  .featherlight .featherlight-close-icon {
-    /* position: centering vertical and horizontal */
-    display: none;
-    position: absolute;
-    z-index: 9999;
-    top: 0;
-    right: 0;
-    /* dimensions: 25px x 25px */
-    line-height: 25px;
-    width: 25px;
-    /* styling */
-    cursor: pointer;
-    text-align: center;
-    font: Arial, sans-serif;
-    background: #fff;
-    /* Set the background in case it overlaps the content */
-    background: rgba(255, 255, 255, 0.3);
-    color: #000; }
-  .featherlight .featherlight-image {
-    /* styling */
-    width: 100%; }
-  .featherlight-iframe .featherlight-content {
-    /* removed the border for image croping since iframe is edge to edge */
-    border-bottom: 0;
-    padding: 0; }
-  .featherlight iframe {
-    /* styling */
-    border: none; } }
+.featherlight {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #333;
+  background: rgba(0, 0, 0, 0); }
 
-/* handling phones and small screens */
+.featherlight:last-of-type {
+  background: rgba(0, 0, 0, 0.8); }
+
+.featherlight:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; }
+
+.featherlight .featherlight-content {
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: auto;
+  overflow-x: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-height: 95%;
+  background: #fff;
+  cursor: auto;
+  white-space: normal; }
+
+.featherlight .featherlight-inner {
+  display: block; }
+
+.featherlight .featherlight-close-icon {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  line-height: 25px;
+  width: 25px;
+  cursor: pointer;
+  text-align: center;
+  font: Arial, sans-serif;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000; }
+
+.featherlight .featherlight-image {
+  width: 100%; }
+
+.featherlight-iframe .featherlight-content {
+  border-bottom: 0;
+  padding: 0; }
+
+.featherlight iframe {
+  border: none; }
+
 @media only screen and (max-width: 1024px) {
   .featherlight .featherlight-content {
-    /* dimensions: maximize lightbox with for small screens */
     margin-left: 10px;
     margin-right: 10px;
     max-height: 98%; } }
 
 .cirugia-iframe {
-  width: 767px;
+  width: 1024px;
   background-color: white; }
+
+@media only screen and (max-width: 1160px) {
+  .cirugia-iframe {
+    width: 900px; } }
+
+@media only screen and (max-width: 1023px) {
+  .cirugia-iframe {
+    width: 767px; } }
 
 @media only screen and (max-width: 850px) {
   .cirugia-iframe {
@@ -2017,10 +2001,10 @@ td, th {
   display: block;
   background-color: #187fdf;
   color: white;
-  padding: 7px 0 9px 0;
+  padding: 11px 0 13px 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.9em;
   -webkit-transition: all 250ms;
   transition: all 250ms; }
 
@@ -2163,6 +2147,11 @@ a {
       box-shadow: none; }
       .btn.btn-main.btn-flat:hover {
         background-color: #1367b1; }
+      .btn.btn-main.btn-flat.btn-disabled {
+        opacity: 0.4;
+        cursor: no-drop; }
+        .btn.btn-main.btn-flat.btn-disabled:hover {
+          background-color: #187fdf !important; }
 
 h2.main-title {
   margin: 0 0 40px 0;
@@ -2269,6 +2258,29 @@ h4.main-title {
       .logo-box .logo-box-img {
         top: auto; } }
 
+.dropdown-container {
+  position: relative; }
+  .dropdown-container span {
+    line-height: 0; }
+
+.dropdown-items {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: white;
+  left: 0px;
+  top: 70px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); }
+  .dropdown-items li {
+    display: block !important;
+    float: none !important; }
+    .dropdown-items li a {
+      width: 100%;
+      text-align: left;
+      display: block !important; }
+
 .info-bar {
   padding: 10px 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -2323,10 +2335,22 @@ nav {
   -webkit-transition: all 500ms;
   transition: all 500ms; }
   nav .nav-items {
+    width: 880px;
+    float: right;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    position: relative;
+    left: 8px; }
+    @media only screen and (max-width: 1160px) {
+      nav .nav-items {
+        width: 762px; } }
+    @media only screen and (max-width: 1023px) {
+      nav .nav-items {
+        width: 100%;
+        float: none; } }
     nav .nav-items li {
-      display: inline-block; }
+      display: inline-block;
+      float: left; }
       nav .nav-items li a {
         display: inline-block;
         line-height: 0;
@@ -2376,16 +2400,18 @@ nav {
     clear: both;
     -webkit-transform: translate3d(0, 0, 0);
     -webkit-transition: all 500ms;
-    transition: all 500ms; }
-    .nav-mobile .nav-items li {
+    transition: all 500ms;
+    left: auto; }
+    .nav-mobile .nav-items > li {
       display: block;
       width: 100%; }
-      .nav-mobile .nav-items li a {
+      .nav-mobile .nav-items > li > a {
         display: block;
         padding: 24px 30px;
-        background-color: rgba(255, 255, 255, 0.8); }
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: right; }
         @media only screen and (max-width: 640px) {
-          .nav-mobile .nav-items li a {
+          .nav-mobile .nav-items > li > a {
             background-color: rgba(255, 255, 255, 0.95); } }
     .nav-mobile .nav-items li:first-child {
       border-top: 1px solid rgba(255, 255, 255, 0.6); }
@@ -2393,9 +2419,21 @@ nav {
         .nav-mobile .nav-items li:first-child {
           border-top: 1px solid rgba(255, 255, 255, 0.8); } }
     .nav-mobile .nav-items.hidden {
-      max-height: 0px; }
+      max-height: 0px !important; }
+    .nav-mobile .nav-items.height-extended {
+      max-height: 434px; }
   .nav-mobile .nav-trigger {
     display: inline-block; }
+  .nav-mobile .dropdown-items {
+    box-shadow: none;
+    position: relative;
+    top: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    .nav-mobile .dropdown-items li a {
+      text-align: right;
+      padding: 24px 30px; }
 
 .nav-logo {
   display: none; }
@@ -2444,14 +2482,12 @@ section.intro {
     position: relative;
     background-size: cover; }
     section.intro .intro-item.item-1 {
-      background-image: url(../img/intro-slider-bg-1.jpg); }
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        section.intro .intro-item.item-1 {
-          background-image: url(../img/intro-slider-bg-1@2x.jpg); } }
+      background-image: url(../img/intro-bg.jpg);
+      background-position: 90% 50%; }
     @media only screen and (max-width: 640px) {
       section.intro .intro-item {
         height: auto;
-        background: url(../img/mobile-bg.jpg) no-repeat 50% 50% !important;
+        background-image: url(../img/intro-bg-mobile.jpg) !important;
         background-size: cover;
         text-align: center; } }
     section.intro .intro-item .intro-item-content {
@@ -2536,6 +2572,9 @@ section.intro {
         background-image: url(../img/consulta-2.jpg); }
       .consulta-main .slider .consulta-slider-img.img-3 {
         background-image: url(../img/consulta-3.jpg); }
+      .consulta-main .slider .consulta-slider-img.img-4 {
+        background-image: url(../img/consulta-4.jpg);
+        background-position: 100% 100%; }
     .consulta-main .slider .slick-track, .consulta-main .slider .slick-list {
       height: 100%; }
   @media only screen and (max-width: 1500px) {
@@ -2591,6 +2630,25 @@ section.intro {
       color: white; }
     .cirugia-part.estetica .slick-prev, .cirugia-part.estetica .slick-next {
       color: white; }
+  .cirugia-part.microcirugia {
+    background: black url(../img/microcirugia-bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    text-align: center; }
+    @media only screen and (max-width: 991px) {
+      .cirugia-part.microcirugia {
+        background-image: url(../img/microcirugia-bg-mobile.jpg); } }
+    .cirugia-part.microcirugia h2, .cirugia-part.microcirugia p {
+      color: white; }
+    .cirugia-part.microcirugia p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      padding: 0 20px; }
+      @media only screen and (max-width: 400px) {
+        .cirugia-part.microcirugia p {
+          font-size: 1.1em; } }
+  .cirugia-part.sanatorios {
+    background: #eaeaea url(../img/estetica-bg.jpg) no-repeat 50% 50%;
+    background-size: cover; }
   .cirugia-part .cirugia-carousel {
     padding: 0 30px; }
     .cirugia-part .cirugia-carousel:hover .slick-prev, .cirugia-part .cirugia-carousel:hover .slick-next {

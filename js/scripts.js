@@ -15,10 +15,10 @@ $(window).on("load resize",function(){
 	var offset = $('header').height() + $('nav').height();
 	var textHeight = $('.consulta .text').outerHeight();
 	$('section.intro').height(vh);
-	$('.intro-clear').height(vh - offset);
+	$('.intro-clear').height(vh - offset - 6);
 	$('.consulta .slider').height(textHeight);
 
-	if (vw <= 1023) {
+	if (vw < 1024) {
 		$("nav").addClass('nav-mobile');
 		$('.nav-items').addClass('hidden');
 	} else {
@@ -33,7 +33,7 @@ $( document ).ready(function() {
 
 	$('.smooth-offset').smoothScroll({
 		speed: 800,
-		offset: -40
+		offset: -60
 	});
 
 	$('.slick').slick({
@@ -93,14 +93,41 @@ $( document ).ready(function() {
 	});
 
 	// createNav();
+
+	$('.dropdown').next('ul').hide();
+
+	$('.dropdown').click(function() {
+		if ($(this).hasClass('dropdown-opened')) {
+			$(this).next('ul').slideUp(300);
+			$(this).removeClass('dropdown-opened');
+		} else {
+			$(this).next('ul').slideToggle(300);
+			$(this).addClass('dropdown-opened');
+		}
+	});
+
+	$('.dropdown').on('click', function(e) {
+		e.stopPropagation();
+	});
+
+	$(document).on('click', function (e) {
+		$('.dropdown-opened').next('ul').slideUp(300);
+		$('.dropdown-opened').removeClass('dropdown-opened');
+	});
 });
 
 $('.nav-trigger').on("click", function(){
+	$('.nav-items').toggleClass('hidden').removeClass('height-extended');
+	$('.dropdown-opened').next('ul').slideUp(300);
+	$('.dropdown-opened').removeClass('dropdown-opened');
+});
+
+$('.nav-items a:not(.dropdown)').on("click", function(){
 	$('.nav-items').toggleClass('hidden');
 });
 
-$('.nav-items a').on("click", function(){
-	$('.nav-items').toggleClass('hidden');
+$('.dropdown').on("click", function(){
+	$('.nav-mobile .nav-items').toggleClass('height-extended');
 });
 
 var navWaypoint1 = $('body').waypoint(function(direction) {
@@ -115,19 +142,35 @@ var navWaypoint2 = $('#anchor-consulta').waypoint(function(direction) {
   offset: 100
 });
 
-var myLatlng = new google.maps.LatLng(-34.5883635,-58.3825816);
-var myLatlngCenter = new google.maps.LatLng(-34.5890598,-58.3870188);
-var mapOptions = {
-	center: myLatlngCenter,
-	zoom: 16,
-	mapTypeId: google.maps.MapTypeId.ROADMAP,
-	disableDefaultUI: true
-};
-var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-var marker = new google.maps.Marker({
-    position: myLatlng,
-    map: map,
-    title: 'Hotel Bristol'
-});
+function initialize(){
+	var myLatlng = new google.maps.LatLng(-34.5883635,-58.3825816);
+	var myLatlngCenter = new google.maps.LatLng(-34.5890598,-58.3870188);
+	var mapOptions = {
+		center: myLatlngCenter,
+		zoom: 16,
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		disableDefaultUI: true
+	};
+	var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title: 'Consultorio'
+	});
+}
 
-Waves.displayEffect();
+function loadScript() {
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = 'http://maps.googleapis.com/maps/api/js?key=AIzaSyBN5l2KRXtun3ErzrPtiVoyYw6nLBdxkvs&sensor=false&callback=initialize';
+	document.body.appendChild(script);
+}
+
+$(window).on("load",function(){
+	loadScript();
+	var vw = $(window).width();
+
+	if (vw > 767) {
+		Waves.displayEffect();
+	}
+});

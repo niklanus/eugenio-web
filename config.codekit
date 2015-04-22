@@ -11,6 +11,33 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/cirugia\/facial-1.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cirugia\/facial-1.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/cirugia\/facial-2.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cirugia\/facial-2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/cirugia\/facial-3.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cirugia\/facial-3.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/blueprints.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -164,17 +191,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/img\/_DSC1678-Editar.png": {
-		"fileType": 32768,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/img\/_DSC1678-Editar.png",
-		"outputAbbreviatedPath": "\/img\/_DSC1678-Editar.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/chouhy.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -204,28 +220,6 @@
 		"initialSize": 17736,
 		"inputAbbreviatedPath": "\/img\/cirugia-1.jpg",
 		"outputAbbreviatedPath": "\/img\/cirugia-1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/img\/cirugia-2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 17616,
-		"inputAbbreviatedPath": "\/img\/cirugia-2.jpg",
-		"outputAbbreviatedPath": "\/img\/cirugia-2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/img\/cirugia-3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19234,
-		"inputAbbreviatedPath": "\/img\/cirugia-3.jpg",
-		"outputAbbreviatedPath": "\/img\/cirugia-3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -261,7 +255,7 @@
 		"outputAbbreviatedPath": "\/img\/consulta-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/consulta-2.jpg": {
 		"fileType": 16384,
@@ -272,7 +266,29 @@
 		"outputAbbreviatedPath": "\/img\/consulta-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
+		},
+	"\/img\/consulta-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77654,
+		"inputAbbreviatedPath": "\/img\/consulta-3.jpg",
+		"outputAbbreviatedPath": "\/img\/consulta-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/consulta-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101074,
+		"inputAbbreviatedPath": "\/img\/consulta-4.jpg",
+		"outputAbbreviatedPath": "\/img\/consulta-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/dialog-decoration-alt.png": {
 		"fileType": 32768,
@@ -318,6 +334,83 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/estetica-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18083,
+		"inputAbbreviatedPath": "\/img\/estetica-1.jpg",
+		"outputAbbreviatedPath": "\/img\/estetica-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/estetica-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18083,
+		"inputAbbreviatedPath": "\/img\/estetica-2.jpg",
+		"outputAbbreviatedPath": "\/img\/estetica-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/estetica-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18083,
+		"inputAbbreviatedPath": "\/img\/estetica-3.jpg",
+		"outputAbbreviatedPath": "\/img\/estetica-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/estetica-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17712,
+		"inputAbbreviatedPath": "\/img\/estetica-4.jpg",
+		"outputAbbreviatedPath": "\/img\/estetica-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/estetica-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13343,
+		"inputAbbreviatedPath": "\/img\/estetica-5.jpg",
+		"outputAbbreviatedPath": "\/img\/estetica-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/estetica-6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16553,
+		"inputAbbreviatedPath": "\/img\/estetica-6.jpg",
+		"outputAbbreviatedPath": "\/img\/estetica-6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/estetica-7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/estetica-7.jpg",
+		"outputAbbreviatedPath": "\/img\/estetica-7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/estetica-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -328,6 +421,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/img\/facial-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25039,
+		"inputAbbreviatedPath": "\/img\/facial-1.jpg",
+		"outputAbbreviatedPath": "\/img\/facial-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/facial-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16708,
+		"inputAbbreviatedPath": "\/img\/facial-2.jpg",
+		"outputAbbreviatedPath": "\/img\/facial-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/facial-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16568,
+		"inputAbbreviatedPath": "\/img\/facial-3.jpg",
+		"outputAbbreviatedPath": "\/img\/facial-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/header-logo.png": {
 		"fileType": 32768,
@@ -350,6 +476,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/img\/intro-bg-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75122,
+		"inputAbbreviatedPath": "\/img\/intro-bg-mobile.jpg",
+		"outputAbbreviatedPath": "\/img\/intro-bg-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/intro-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159606,
+		"inputAbbreviatedPath": "\/img\/intro-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/intro-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/intro-slider-bg-1.jpg": {
 		"fileType": 16384,
@@ -380,6 +528,28 @@
 		"initialSize": 225010,
 		"inputAbbreviatedPath": "\/img\/intro-slider-eugenio-1.png",
 		"outputAbbreviatedPath": "\/img\/intro-slider-eugenio-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/microcirugia-bg-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46175,
+		"inputAbbreviatedPath": "\/img\/microcirugia-bg-mobile.jpg",
+		"outputAbbreviatedPath": "\/img\/microcirugia-bg-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/microcirugia-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103775,
+		"inputAbbreviatedPath": "\/img\/microcirugia-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/microcirugia-bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -449,6 +619,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/img\/sanatorio-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25340,
+		"inputAbbreviatedPath": "\/img\/sanatorio-1.jpg",
+		"outputAbbreviatedPath": "\/img\/sanatorio-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/sanatorio-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37154,
+		"inputAbbreviatedPath": "\/img\/sanatorio-2.jpg",
+		"outputAbbreviatedPath": "\/img\/sanatorio-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
