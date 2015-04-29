@@ -9,6 +9,10 @@
 @import 'components/featherlight';
 @import 'components/waves';
 
+html {
+	font-size: 16px;
+}
+
 body {
 	font-size: 100%;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
@@ -118,7 +122,7 @@ h4.main-title {
 	list-style-position: inside;
 	
 	p {
-		font-size: 1.1em;
+		font-size: 1em;
 		margin: 0;
 		line-height: 1.45;
 	}
@@ -141,7 +145,7 @@ h4.main-title {
 		list-style: none;
 
 		li {
-			margin: 0 -15px 20px -15px;
+			margin: 0 -15px 15px -15px;
 		}
 
 		.icon_check {
@@ -151,7 +155,7 @@ h4.main-title {
 		}
 
 		p {
-			font-size: 1.3em;
+			font-size: 1.1em;
 			position: relative;
 			left: -40px;
 			
@@ -184,7 +188,7 @@ h4.main-title {
 
 .logo-box {
 	width: 240px;
-	height: 220px;
+	height: 200px;
 	background: $blue;
 	text-align: center;
 	padding: 0;
@@ -199,7 +203,7 @@ h4.main-title {
 		height: 114px;
 		background: url(../img/header-logo.png) no-repeat 50% 50%;
 		position: relative;
-		top: 65px;
+		top: 44px;
 		
 		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 			background-image: url(../img/header-logo@2x.png);
@@ -505,6 +509,7 @@ nav {
 .nav-sticky {
 	nav {
 		top: 0px;
+		z-index: 9999;
 	}
 }
 
@@ -628,14 +633,15 @@ section.intro {
 	}
 	
 	.text {
-		padding: 75px;
+		padding: 50px 75px;
 		width: 60%;
 		background-color: $blue;
 		color: white;
 
 		p {
-			font-size: 1.15em;
+			font-size: 1em;
 			line-height: 1.45;
+			margin-bottom: 0;
 		}
 	}
 
@@ -661,10 +667,27 @@ section.intro {
 				background-image: url(../img/consulta-4.jpg);
 				background-position: 100% 100%;
 			}
+			&.img-5 {
+				background-image: url(../img/consulta-5.jpg);
+			}
 		}
 
 		.slick-track, .slick-list {
 			height: 100%;
+		}
+	}
+
+	@media only screen and (min-width: 1500px) {
+		.text {
+			padding: 80px 75px;
+		}
+	}
+
+	@media only screen and (min-width: 1500px) {
+		.text {
+			p {
+				font-size: 1.1em;
+			}
 		}
 	}
 
@@ -702,10 +725,6 @@ section.intro {
 			top: 0px;
 			z-index: 1;
 			background-color: $blue-alpha2;
-
-			p {
-				font-size: 1.15em;
-			}
 		}
 
 		.slider {
@@ -723,7 +742,7 @@ section.intro {
 
 .consulta-more {
 	background: white;
-	padding: 60px 0;
+	padding: 50px 0;
 	
 		@media only screen and (max-width : 767px) {
 			.container .col-sm-6:first-child {
@@ -773,7 +792,7 @@ section.intro {
 
 		p {
 			font-size: 1.2em;
-			margin-bottom: 40px;
+			margin-bottom: 10px;
 			padding: 0 20px;
 
 			@media only screen and (max-width : 400px) {
@@ -1069,7 +1088,7 @@ section.testimonios {
 .about-main {
 	background: $blue;
 	color: white;
-	padding: 60px 0;
+	padding: 50px 0;
 	text-align: center;
 
 	h2 {
@@ -1093,7 +1112,7 @@ section.testimonios {
 .about-more {
 	background: darken($blue,10);
 	color: white;
-	padding: 60px 0;
+	padding: 50px 0;
 
 	h3 {
 		padding-bottom: 10px;

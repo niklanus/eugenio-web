@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if IE 8]>    <html lang="en-us" class="ie8"> <![endif]-->
-<!--[if lt IE 9]><!--> <html lang="es" class="ie9plus"> <!--<![endif]-->
+<!--[if !IE]><!--><html lang="es" class=""><!--<![endif]-->
+<!--[if IE]><html lang="es" class="ie"><![endif]-->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -11,12 +11,12 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/blueprints.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700,300,600,400' rel='stylesheet' type='text/css'>
-    
-    <!--[if lt IE 9]>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<header>
@@ -88,6 +88,7 @@
 				<div class="consulta-slider-img img-1"></div>
 				<div class="consulta-slider-img img-2"></div>
 				<div class="consulta-slider-img img-3"></div>
+				<div class="consulta-slider-img img-5"></div>
 				<div class="consulta-slider-img img-4"></div>
 			</div>
 		</div>
@@ -100,10 +101,10 @@
 							<p>Ofrecer el mejor resultado posible, con el índice mas bajo de complicaciones y reintervenciones.</p>
 						</li>
 						<li>
-							<p>Ser totalmente honesto y directo, incluso cuando significa algo que el paciente no quiere oir.</p>
+							<p>Ser totalmente honesto.</p>
 						</li>
 						<li>
-							<p>Coherencia con lo que decimos antes y despues de la cirugia. Nunca cambiando la historia y evitando sorpresas.</p>
+							<p>Coherencia con lo que decimos antes y despues del procedimiento.</p>
 						</li>
 						<li>
 							<p>Tomar decisiones basadas en el conocimiento, la objetividad y la realidad.</p>
@@ -202,9 +203,9 @@
 
 
 		<div class="cirugia-part estetica" id="anchor-estetica">
-			<div class="container">
+			<div class="container container-carousel">
 				<h2 class="main-title"><span class="main">Cirugía Estética</span></h2>
-				<div class="cirugia-carousel">
+				<div class="cirugia-carousel-big">
 					
 					<div class="cirugia-item">
 						<img src="img/estetica-1.jpg" alt="">
@@ -269,9 +270,9 @@
 
 
 		<div class="cirugia-part reparadora" id="anchor-reparadora">
-			<div class="container">
+			<div class="container container-carousel">
 				<h2 class="main-title"><span class="main">Cirugía Reparadora</span></h2>
-				<div class="cirugia-carousel">
+				<div class="cirugia-carousel-big">
 					<div class="cirugia-item">
 						<div class="text">
 							<h3>Reconstruccion mamaria</h3>
@@ -398,8 +399,8 @@
 			<div class="container">
 				<div class="contact-overlay">
 					<div class="inner">
-						<!--<p><a href="https://www.google.com.ar/maps/place/Av+del+Libertador+672,+Buenos+Aires,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires/@-34.5883635,-58.3825816,17z/data=!3m1!4b1!4m2!3m1!1s0x95bccab00fd90607:0xcd271c1cbb97eee"><i class="icon_pin"></i> Av. del Libertador 672</a></p>-->
-						<p><a href="tel:011-4816-1950"><i class="icon_phone"></i> <span>(011)</span> 4816-1950 / 4813-3583</a></p>
+						<p><a href="https://www.google.com.ar/maps/place/Juncal+673,+Buenos+Aires,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires/@-34.5928482,-58.3768123,17z/data=!3m1!4b1!4m2!3m1!1s0x95bccab43a83dd17:0x2917d520938cc77"><i class="icon_pin"></i> Juncal 673</a></p>
+						<p><a href="tel:1133933147"><i class="icon_phone"></i> <span>(+54 9)</span> 11-3393-3147</a></p>
 						<p><i class="icon_mail"></i> <a href="mailto:info@eugeniochouhy.com">info@eugeniochouhy.com</a></p>
 					</div>
 				</div>
@@ -436,7 +437,7 @@
 	<script src="js/smooth-scroll.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/featherlight.js"></script>
-	<script src="js/waves.min.js"></script>
+	<!--[if !IE]><!--><script src="js/waves.min.js"></script><!--<![endif]-->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>

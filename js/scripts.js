@@ -55,6 +55,50 @@ $( document ).ready(function() {
 		pauseOnHover: false
 	});
 
+	$('.cirugia-carousel-big').slick({
+		autoplay: true,
+		autoplaySpeed: 3000,
+		speed: 750,
+		dots: false,
+		arrows: true,
+		pauseOnHover: false,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		prevArrow: '<button type="button" class="slick-prev"><i class="arrow_carrot-left"></i></button>',
+		nextArrow: '<button type="button" class="slick-next"><i class="arrow_carrot-right"></i></button>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+		}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+		]
+	});
+
 	$('.cirugia-carousel').slick({
 		autoplay: true,
 		autoplaySpeed: 3000,
@@ -72,7 +116,7 @@ $( document ).ready(function() {
 			breakpoint: 992,
 			settings: {
 				slidesToShow: 2,
-				slidesToScroll: 2,
+				slidesToScroll: 2
 			}
 		},
 		{
@@ -143,8 +187,8 @@ var navWaypoint2 = $('#anchor-consulta').waypoint(function(direction) {
 });
 
 function initialize(){
-	var myLatlng = new google.maps.LatLng(-34.5883635,-58.3825816);
-	var myLatlngCenter = new google.maps.LatLng(-34.5890598,-58.3870188);
+	var myLatlng = new google.maps.LatLng(-34.5928482,-58.3768123);
+	var myLatlngCenter = new google.maps.LatLng(-34.5919598,-58.3820188);
 	var mapOptions = {
 		center: myLatlngCenter,
 		zoom: 16,
@@ -170,7 +214,7 @@ $(window).on("load",function(){
 	loadScript();
 	var vw = $(window).width();
 
-	if (vw > 767) {
+	if (vw > 767 && (!$('body').hasClass('ie')) ) {
 		Waves.displayEffect();
 	}
 });

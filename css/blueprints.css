@@ -1,6 +1,7 @@
 * {
   -moz-box-sizing: border-box;
-       box-sizing: border-box; }
+       box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
 p, a, h1, h2, h3, h4, h5, li, span, i {
   -webkit-font-smoothing: antialiased; }
@@ -1312,6 +1313,10 @@ td, th {
   .container {
     width: 1170px; } }
 
+@media (min-width: 1400px) {
+  .container.container-carousel {
+    width: 1350px; } }
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -2109,6 +2114,9 @@ td, th {
 a.waves-effect .waves-ripple {
   z-index: -1; }
 
+html {
+  font-size: 16px; }
+
 body {
   font-size: 100%;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
@@ -2192,7 +2200,7 @@ h4.main-title {
   margin: 0;
   list-style-position: inside; }
   .points-list p {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0;
     line-height: 1.45; }
   .points-list li {
@@ -2204,13 +2212,13 @@ h4.main-title {
   .points-list.ticks {
     list-style: none; }
     .points-list.ticks li {
-      margin: 0 -15px 20px -15px; }
+      margin: 0 -15px 15px -15px; }
     .points-list.ticks .icon_check {
       font-size: 1.6em;
       position: relative;
       top: 2px; }
     .points-list.ticks p {
-      font-size: 1.3em;
+      font-size: 1.1em;
       position: relative;
       left: -40px; }
       @media only screen and (max-width: 1199px) {
@@ -2229,7 +2237,7 @@ h4.main-title {
 
 .logo-box {
   width: 240px;
-  height: 220px;
+  height: 200px;
   background: #187fdf;
   text-align: center;
   padding: 0;
@@ -2243,7 +2251,7 @@ h4.main-title {
     height: 114px;
     background: url(../img/header-logo.png) no-repeat 50% 50%;
     position: relative;
-    top: 65px; }
+    top: 44px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .logo-box .logo-box-img {
         background-image: url(../img/header-logo@2x.png);
@@ -2462,7 +2470,8 @@ nav {
         background-image: url(../img/nav-logo@2x.png); } }
 
 .nav-sticky nav {
-  top: 0px; }
+  top: 0px;
+  z-index: 9999; }
 
 section.intro {
   width: 100%;
@@ -2552,13 +2561,14 @@ section.intro {
     float: left;
     position: relative; }
   .consulta-main .text {
-    padding: 75px;
+    padding: 50px 75px;
     width: 60%;
     background-color: #187fdf;
     color: white; }
     .consulta-main .text p {
-      font-size: 1.15em;
-      line-height: 1.45; }
+      font-size: 1em;
+      line-height: 1.45;
+      margin-bottom: 0; }
   .consulta-main .slider {
     width: 40%; }
     .consulta-main .slider .consulta-slider-img {
@@ -2575,8 +2585,16 @@ section.intro {
       .consulta-main .slider .consulta-slider-img.img-4 {
         background-image: url(../img/consulta-4.jpg);
         background-position: 100% 100%; }
+      .consulta-main .slider .consulta-slider-img.img-5 {
+        background-image: url(../img/consulta-5.jpg); }
     .consulta-main .slider .slick-track, .consulta-main .slider .slick-list {
       height: 100%; }
+  @media only screen and (min-width: 1500px) {
+    .consulta-main .text {
+      padding: 80px 75px; } }
+  @media only screen and (min-width: 1500px) {
+    .consulta-main .text p {
+      font-size: 1.1em; } }
   @media only screen and (max-width: 1500px) {
     .consulta-main .text, .consulta-main .slider {
       width: 50%; } }
@@ -2599,8 +2617,6 @@ section.intro {
       top: 0px;
       z-index: 1;
       background-color: rgba(24, 127, 223, 0.7); }
-      .consulta-main .text p {
-        font-size: 1.15em; }
     .consulta-main .slider {
       z-index: 0;
       width: 100%; } }
@@ -2610,7 +2626,7 @@ section.intro {
 
 .consulta-more {
   background: white;
-  padding: 60px 0; }
+  padding: 50px 0; }
   @media only screen and (max-width: 767px) {
     .consulta-more .container .col-sm-6:first-child {
       margin-bottom: 60px; } }
@@ -2641,7 +2657,7 @@ section.intro {
       color: white; }
     .cirugia-part.microcirugia p {
       font-size: 1.2em;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
       padding: 0 20px; }
       @media only screen and (max-width: 400px) {
         .cirugia-part.microcirugia p {
@@ -2827,7 +2843,7 @@ section.testimonios .container {
 .about-main {
   background: #187fdf;
   color: white;
-  padding: 60px 0;
+  padding: 50px 0;
   text-align: center; }
   .about-main h2 {
     padding-bottom: 20px; }
@@ -2845,7 +2861,7 @@ section.testimonios .container {
 .about-more {
   background: #1367b1;
   color: white;
-  padding: 60px 0; }
+  padding: 50px 0; }
   .about-more h3 {
     padding-bottom: 10px; }
 
