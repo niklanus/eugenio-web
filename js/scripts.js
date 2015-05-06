@@ -1,14 +1,3 @@
-/*var navItems = {
-		names: ['1ra Consulta', 'Estética', 'Reparadora', 'Testimonios', 'Dr. Chouhy', 'Contacto'],
-		links: ['#anchor-consulta', '#anchor-estetica', '#anchor-reparadora', '#anchor-testimonios', '#anchor-chouhy', '#anchor-contacto']
-	};
-
-function createNav(){
-	for (var i = 0; i < navItems["names"].length; i++) {
-		$(".nav-items").append('<li><a href="'+ navItems.links[i] +'" class="waves-button waves-effect">' + navItems.names[i] + '</a></li>');
-	}
-}*/
-
 $(window).on("load resize",function(){
 	var vw = $(window).width();
 	var vh = $(window).height();
@@ -136,8 +125,6 @@ $( document ).ready(function() {
 		]
 	});
 
-	// createNav();
-
 	$('.dropdown').next('ul').hide();
 
 	$('.dropdown').click(function() {
@@ -158,6 +145,59 @@ $( document ).ready(function() {
 		$('.dropdown-opened').next('ul').slideUp(300);
 		$('.dropdown-opened').removeClass('dropdown-opened');
 	});
+
+
+	// AJAX FORM
+	
+	$("#contact-submit").click(function() {
+		var proceed = true;
+		//simple validation at client's end
+		//loop through each field and we simply change border color to red for invalid fields       
+		$("#contact-form input[required=true], #contact-form textarea[required=true]").each(function(){
+			$(this).css('border-color','');
+			if(!$.trim($(this).val())){ //if this field is empty 
+				$(this).css('border-color','red'); //change border color to red   
+				proceed = false; //set do not proceed flag
+			}
+			//check invalid email
+			var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+			if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+				$(this).css('border-color','red'); //change border color to red   
+				proceed = false; //set do not proceed flag              
+			}
+		});
+
+		if(proceed) //everything looks good! proceed...
+		{
+			//get input field values data to be sent to server
+			post_data = {
+				'name' : $('input[name=contact-name]').val(),
+				'email': $('input[name=contact-email]').val(),
+				'tel'  : $('input[name=contact-tel]').val(),
+				'msg'  : $('textarea[name=contact-msg]').val()
+			};
+			
+			//Ajax post data to server
+			$.post('contact-form.php', post_data, function(response){
+				if(response.type == 'error'){ //load json data from server and output message     
+					output = '<div class="error">'+response.text+'</div>';
+				}else{
+					output = '<div class="success">'+response.text+'</div>';
+					//reset values in all input fields
+					$("#contact-form input[required=true], #contact-form textarea[required=true]").val('');
+					$("#contact-form .contact-form-body").slideUp(); //hide form after success
+				}
+				$("#contact-form .contact-form-body").hide().html(output).slideDown();
+			}, 'json');
+		}
+	});
+
+	//reset previously set border colors and hide all message on .keyup()
+	$("#contact-form input[required=true], #contact-form textarea[required=true]").keyup(function() {
+		$(this).css('border-color','');
+		$("#result").slideUp();
+	});
+
 });
 
 $('.nav-trigger').on("click", function(){

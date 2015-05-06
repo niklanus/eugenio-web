@@ -2160,6 +2160,22 @@ a {
         cursor: no-drop; }
         .btn.btn-main.btn-flat.btn-disabled:hover {
           background-color: #187fdf !important; }
+  .btn.btn-white {
+    background-color: white;
+    color: #187fdf;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); }
+    .btn.btn-white:hover {
+      box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.4); }
+  .btn.info-bar-cta {
+    height: 32px;
+    line-height: 32px;
+    color: white;
+    font-weight: 400;
+    border: 1px solid white;
+    padding: 0 16px; }
+    .btn.info-bar-cta:hover {
+      background-color: white;
+      color: #373739; }
 
 h2.main-title {
   margin: 0 0 40px 0;
@@ -2318,7 +2334,9 @@ h4.main-title {
         display: block;
         margin-left: 0px; }
         .info-bar ul li:first-child {
-          margin-bottom: 10px; } }
+          margin-bottom: 10px; }
+      .info-bar .info-bar-cta {
+        margin-top: 14px; } }
   @media only screen and (max-width: 640px) {
     .info-bar {
       text-align: center;
@@ -2326,7 +2344,11 @@ h4.main-title {
       .info-bar ul {
         padding: 0; }
         .info-bar ul li:first-child {
-          display: none; } }
+          display: none; }
+        .info-bar ul li:nth-child(2) {
+          display: none; }
+      .info-bar .info-bar-cta {
+        margin-top: 0; } }
 
 nav {
   background-color: white;
@@ -2568,23 +2590,25 @@ section.intro {
     .consulta-main .text p {
       font-size: 1em;
       line-height: 1.45;
-      margin-bottom: 0; }
+      margin-bottom: 20px; }
   .consulta-main .slider {
     width: 40%; }
     .consulta-main .slider .consulta-slider-img {
       width: 100%;
       height: 100%;
       position: relative;
-      background-size: cover; }
+      background-size: cover;
+      /*&.img-3 {
+				background-image: url(../img/consulta-3.jpg);
+			}
+			&.img-4 {
+				background-image: url(../img/consulta-4.jpg);
+				background-position: 100% 100%;
+			}*/ }
       .consulta-main .slider .consulta-slider-img.img-1 {
         background-image: url(../img/consulta-1.jpg); }
       .consulta-main .slider .consulta-slider-img.img-2 {
         background-image: url(../img/consulta-2.jpg); }
-      .consulta-main .slider .consulta-slider-img.img-3 {
-        background-image: url(../img/consulta-3.jpg); }
-      .consulta-main .slider .consulta-slider-img.img-4 {
-        background-image: url(../img/consulta-4.jpg);
-        background-position: 100% 100%; }
       .consulta-main .slider .consulta-slider-img.img-5 {
         background-image: url(../img/consulta-5.jpg); }
     .consulta-main .slider .slick-track, .consulta-main .slider .slick-list {
@@ -2841,30 +2865,40 @@ section.testimonios .container {
       padding: 0; } }
 
 .about-main {
-  background: #187fdf;
+  background: #1367b1;
   color: white;
-  padding: 50px 0;
-  text-align: center; }
+  padding: 50px 0; }
   .about-main h2 {
-    padding-bottom: 20px; }
+    padding-bottom: 50px;
+    text-align: center; }
   .about-main .img {
     width: 260px;
     height: 260px;
     border-radius: 130px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     background: url(../img/chouhy.jpg) no-repeat 50% 50%;
     background-size: 260px 260px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .about-main .img {
         background-image: url(../img/chouhy@2x.jpg); } }
+    @media only screen and (max-width: 991px) and (min-width: 767px) {
+      .about-main .img {
+        width: 190px;
+        height: 190px;
+        background-size: 190px 190px !important; } }
+  .about-main .container-fluid {
+    max-width: 1170px;
+    margin: 0 auto; }
 
-.about-more {
-  background: #1367b1;
-  color: white;
-  padding: 50px 0; }
-  .about-more h3 {
-    padding-bottom: 10px; }
+/*.about-more {
+	background: darken($blue,10);
+	color: white;
+	padding: 50px 0;
 
+	h3 {
+		padding-bottom: 10px;
+	}
+}*/
 .contact h2.main-title {
   margin: 0;
   padding: 55px 0 46px 0;
@@ -2917,7 +2951,7 @@ section.testimonios .container {
         background: #187fdf; } }
 
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"], .contact-form textarea {
-  border: 0px;
+  border: 2px solid white;
   width: 100%;
   display: block;
   padding: 12px 20px;

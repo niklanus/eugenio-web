@@ -23,10 +23,14 @@
 		<div class="info-bar">
 			<ul>
 				<li>
-					<p><i class="icon_house"></i>Av. del Libertador 672, CABA</p>
+					<p><i class="icon_house"></i>Juncal 673, CABA</p>
 				</li>
 				<li>
-					<p><i class="icon_phone"></i>(011) 4816-1950&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">•</span>&nbsp;&nbsp;4813-3583</p>
+					<!--<p><i class="icon_phone"></i>(011) 4816-1950&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">•</span>&nbsp;&nbsp;4813-3583</p>-->
+					<p><i class="icon_phone"></i>(+54 9) 11-3393-3147</p>
+				</li>
+				<li>
+					<a class="btn info-bar-cta smooth-offset" href="#anchor-contacto">Hacer una consulta</a>
 				</li>
 			</ul>
 		</div>
@@ -42,6 +46,7 @@
 		</button>
 		<ul class="nav-items hidden">	
 			<li><a href="#anchor-consulta" class="smooth waves-button waves-effect">1ra Consulta</a></li>
+			<li><a href="#anchor-chouhy" class="smooth-offset waves-button waves-effect">Dr. Chouhy</a></li>
 			<li class="dropdown-container">
 				<a class="dropdown smooth-offset waves-button waves-effect">Cirugías y tratamientos <span class="arrow_carrot-down"></span></a>
 				<ul class="dropdown-items">
@@ -52,7 +57,6 @@
 				</ul>
 			</li>
 			<li><a href="#anchor-sanatorios" class="smooth-offset waves-button waves-effect">Sanatorios</a></li>
-			<li><a href="#anchor-chouhy" class="smooth-offset waves-button waves-effect">Dr. Chouhy</a></li>
 			<li><a href="#anchor-contacto" class="smooth-offset waves-button waves-effect">Contacto</a></li>
 		</ul>
 	</nav>
@@ -83,90 +87,94 @@
 					<span class="sub">¿Por qué es tan importante hacerla?</span>
 				</h2>
 				<p>En la actualidad se puede obtener facilmente información con respecto a procedimientos quirurgicos o inclusive acceder a fotografias que reflejan resultados. Pero las imágenes son engañosas incluso ante cirujanos muy experimentados. Cada paciente disfruta mirando las imagenes antes y después "yo quiero saber lo que voy a parecer", eso es parte de la naturaleza humana. No tengo ningún problema con los pacientes que buscan de las imágenes lo que desean, pero nunca voy a tomar decisiones en base a imagenes. Cuando el paciente y el cirujano ven una imagen, cada uno forma una opinión diferente y por lo tanto subjetiva. Para ofrecer el más alto nivel en resultados con el minimo de riesgos debemos utilizar métodos científicos basados ​​en mediciones objetivas precisas, pero lo mas importante... <strong>individuales</strong> para cada paciente.</p>
+				<a href="#" data-featherlight="consulta-more.html" class="btn btn-white waves-effect waves-button waves-float smooth">Leer más</a>
 			</div>
 			<div class="slider consulta-slider">
 				<div class="consulta-slider-img img-1"></div>
 				<div class="consulta-slider-img img-2"></div>
-				<div class="consulta-slider-img img-3"></div>
+				<!--<div class="consulta-slider-img img-3"></div>-->
 				<div class="consulta-slider-img img-5"></div>
-				<div class="consulta-slider-img img-4"></div>
-			</div>
-		</div>
-		<div class="consulta-more">
-			<div class="container cf">
-				<div class="col-sm-6">
-					<h3 class="main-title">Mis principios</h3>
-					<ul class="points-list padding-right">
-						<li>
-							<p>Ofrecer el mejor resultado posible, con el índice mas bajo de complicaciones y reintervenciones.</p>
-						</li>
-						<li>
-							<p>Ser totalmente honesto.</p>
-						</li>
-						<li>
-							<p>Coherencia con lo que decimos antes y despues del procedimiento.</p>
-						</li>
-						<li>
-							<p>Tomar decisiones basadas en el conocimiento, la objetividad y la realidad.</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<h3 class="main-title">Durante la primera consulta...</h3>
-					<ul class="points-list ticks">
-						<li class="row cf">
-							<div class="col-xs-1 col-sm-2">
-								<i class="icon_check"></i>
-							</div>
-							<div class="col-xs-11 col-sm-10">
-								<p>Historia clínica personalizada</p>
-							</div>
-						</li>
-						<li class="row cf">
-							<div class="col-xs-1 col-sm-2">
-								<i class="icon_check"></i>
-							</div>
-							<div class="col-xs-11 col-sm-10">
-								<p>Evaluación del problema</p>
-							</div>
-						</li>
-						<li class="row cf">
-							<div class="col-xs-1 col-sm-2">
-								<i class="icon_check"></i>
-							</div>
-							<div class="col-xs-11 col-sm-10">
-								<p>Comprender las metas</p>
-							</div>
-						</li>
-						<li class="row cf">
-							<div class="col-xs-1 col-sm-2">
-								<i class="icon_check"></i>
-							</div>
-							<div class="col-xs-11 col-sm-10">
-								<p>Realismo y expectativas</p>
-							</div>
-						</li>
-						<li class="row cf">
-							<div class="col-xs-1 col-sm-2">
-								<i class="icon_check"></i>
-							</div>
-							<div class="col-xs-11 col-sm-10">
-								<p>Planteos terapéuricos</p>
-							</div>
-						</li>
-						<li class="row cf">
-							<div class="col-xs-1 col-sm-2">
-								<i class="icon_check"></i>
-							</div>
-							<div class="col-xs-11 col-sm-10">
-								<p>Análisis de posibles complicaciones</p>
-							</div>
-						</li>
-					</ul>
-				</div>
+				<!--<div class="consulta-slider-img img-4"></div>-->
 			</div>
 		</div>
 	</section>
+
+	<div class="chouhy" id="anchor-chouhy">
+		<div class="about-main">
+			<h2 class="main-title">
+				<span class="main">Acerca del Dr. Chouhy</span>
+			</h2>
+			<div class="container-fluid cf">
+				<div class="col-sm-4">
+					<div class="img"></div>
+				</div>
+				<div class="col-sm-8">
+					<!-- <h3 class="main-title">Formación académica</h3> -->
+
+					<ul class="points-list padding-right">
+						<li>
+							<p>
+								<strong>Médico</strong><br>
+								Universidad Abierta Interamericana. Rosario, Santa Fe.
+							</p>
+						</li>
+						<li>
+							<p>
+								<strong>Especialista en Cirugía General</strong><br>
+								Residencia en el Hospital Interzonal de Agudos San Felipe.
+							</p>
+						</li>
+						<li>
+							<p>
+								<strong>Especialista en Cirugía Plástica Estética y Reparadora</strong><br>
+								Carrera de postgrado, Universidad del Salvador. Buenos Aires.
+							</p>
+						</li>
+					</ul>
+
+					<p>Durante el año 2010 realice una estancia formativa de 6 meses de duracion en el Servicio de Cirugía Plastica y Reconstructiva del Hospital Clinic de Barcelona a cargo del Dr Joan Fontdevilla en donde desperto mi interes por la Microcirugia Reconstructiva participando ademas en el desarrollo de tecnicas de Lipofilling con celulas madre dictadas por la Sociedad Española de Transplante de Grasa (SETGRA).</p>
+					<p>Como parte de mi formacion participe durente 6 meses en el Centro de Excelencia para la Atencion del Quemado (CEPAQ) del Hospital Aleman a cargo de los Dres. Alberto Bolgiani y Fortunato Benaim.</p>
+					<p>En el año 2013 tuve la oportunidad de realizar un Fellowship en The Buncke Clinic (Institute for Plastic and Reconstructive Surgery, Hand Surgery, and Microsurgery) actualmente a cargo de Gregory M. Buncke, hijo de Harry J. Buncke considerado en todo el mundo como el "padre de la microcirugia".</p>
+					<p>Completé ademas el curso intensivo en técnicas microquirurgicas en el Moet Institute dictado por Zoltan Szabo quien desarrolla y perfecciona estas tecnicas desde sus comienzos en los años 60.</p>
+				</div>
+			</div>
+			
+		</div>
+		<!--<div class="about-more">
+			<div class="container cf">
+				<div class="col-sm-6">
+					<h3 class="main-title">Formación académica</h3>
+
+					<ul class="points-list padding-right">
+						<li>
+							<p>
+								<strong>Médico</strong><br>
+								Universidad Abierta Interamericana. Rosario, Santa Fe.
+							</p>
+						</li>
+						<li>
+							<p>
+								<strong>Especialista en Cirugía General</strong><br>
+								Residencia en el Hospital Interzonal de Agudos San Felipe.
+							</p>
+						</li>
+						<li>
+							<p>
+								<strong>Especialista en Cirugía Plástica Estética y Reparadora</strong><br>
+								Carrera de postgrado, Universidad del Salvador. Buenos Aires.
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<p>Durante el año 2010 realice una estancia formativa de 6 meses de duracion en el Servicio de Cirugía Plastica y Reconstructiva del Hospital Clinic de Barcelona a cargo del Dr Joan Fontdevilla en donde desperto mi interes por la Microcirugia Reconstructiva participando ademas en el desarrollo de tecnicas de Lipofilling con celulas madre dictadas por la Sociedad Española de Transplante de Grasa (SETGRA).</p>
+					<p>Como parte de mi formacion participe durente 6 meses en el Centro de Excelencia para la Atencion del Quemado (CEPAQ) del Hospital Aleman a cargo de los Dres. Alberto Bolgiani y Fortunato Benaim.</p>
+					<p>En el año 2013 tuve la oportunidad de realizar un Fellowship en The Buncke Clinic (Institute for Plastic and Reconstructive Surgery, Hand Surgery, and Microsurgery) actualmente a cargo de Gregory M. Buncke, hijo de Harry J. Buncke considerado en todo el mundo como el "padre de la microcirugia".</p>
+					<p>Completé ademas el curso intensivo en técnicas microquirurgicas en el Moet Institute dictado por Zoltan Szabo quien desarrolla y perfecciona estas tecnicas desde sus comienzos en los años 60.</p>
+				</div>
+			</div>
+		</div> -->
+	</div>
 
 	<section class="cirugia">
 		<div class="cirugia-part reparadora" id="anchor-faciales">
@@ -198,7 +206,6 @@
 				</div>
 			</div>
 		</div>
-
 
 
 
@@ -350,49 +357,6 @@
 
 	</section>
 
-	<div class="chouhy" id="anchor-chouhy">
-		<div class="about-main">
-			<h2 class="main-title">
-				<span class="main">Acerca del Dr. Chouhy</span>
-			</h2>
-			<div class="img"></div>
-		</div>
-		<div class="about-more">
-			<div class="container cf">
-				<div class="col-sm-6">
-					<h3 class="main-title">Formación académica</h3>
-
-					<ul class="points-list padding-right">
-						<li>
-							<p>
-								<strong>Médico</strong><br>
-								Universidad Abierta Interamericana. Rosario, Santa Fe.
-							</p>
-						</li>
-						<li>
-							<p>
-								<strong>Especialista en Cirugía General</strong><br>
-								Residencia en el Hospital Interzonal de Agudos San Felipe.
-							</p>
-						</li>
-						<li>
-							<p>
-								<strong>Especialista en Cirugía Plástica Estética y Reparadora</strong><br>
-								Carrera de postgrado, Universidad del Salvador. Buenos Aires.
-							</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<p>Durante el año 2010 realice una estancia formativa de 6 meses de duracion en el Servicio de Cirugía Plastica y Reconstructiva del Hospital Clinic de Barcelona a cargo del Dr Joan Fontdevilla en donde desperto mi interes por la Microcirugia Reconstructiva participando ademas en el desarrollo de tecnicas de Lipofilling con celulas madre dictadas por la Sociedad Española de Transplante de Grasa (SETGRA).</p>
-					<p>Como parte de mi formacion participe durente 6 meses en el Centro de Excelencia para la Atencion del Quemado (CEPAQ) del Hospital Aleman a cargo de los Dres. Alberto Bolgiani y Fortunato Benaim.</p>
-					<p>En el año 2013 tuve la oportunidad de realizar un Fellowship en The Buncke Clinic (Institute for Plastic and Reconstructive Surgery, Hand Surgery, and Microsurgery) actualmente a cargo de Gregory M. Buncke, hijo de Harry J. Buncke considerado en todo el mundo como el "padre de la microcirugia".</p>
-					<p>Completé ademas el curso intensivo en técnicas microquirurgicas en el Moet Institute dictado por Zoltan Szabo quien desarrolla y perfecciona estas tecnicas desde sus comienzos en los años 60.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<section class="contact" id="anchor-contacto">
 		<h2 class="main-title"><span class="main">Contacto</span></h2>
 		<div class="contact-main">
@@ -407,13 +371,15 @@
 				<div class="contact-overlay">
 					<div class="inner">
 						<h4 class="main-title">Formulario de contacto</h4>
-						<form class="contact-form" action="">
-							<input name="" type="text" placeholder="Nombre" required>
-							<input name="" type="email" placeholder="Email" required>
-							<input name="" type="tel" placeholder="Teléfono">
-							<textarea name="" placeholder="Su mensaje..."></textarea>
-							<input class="btn waves-float" type="submit" value="Enviar" name="Submit">
-						</form>
+						<div class="contact-form" id="contact-form">
+							<div class="contact-form-body">
+								<input name="contact-name" type="text" placeholder="Nombre" required="true" autofocus>
+								<input name="contact-email" type="email" placeholder="Email" required="true">
+								<input name="contact-tel" type="tel" placeholder="Teléfono">
+								<textarea name="contact-msg" placeholder="Su mensaje..." required="true"></textarea>
+								<input class="btn waves-float" id="contact-submit" type="submit" value="Enviar" name="Submit">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
