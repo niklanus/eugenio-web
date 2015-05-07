@@ -105,10 +105,10 @@
 				<span class="main">Acerca del Dr. Chouhy</span>
 			</h2>
 			<div class="container-fluid cf">
-				<div class="col-sm-4">
+				<div class="col-md-5">
 					<div class="img"></div>
 				</div>
-				<div class="col-sm-8">
+				<div class="col-md-7">
 					<!-- <h3 class="main-title">Formación académica</h3> -->
 
 					<ul class="points-list padding-right">
@@ -199,8 +199,7 @@
 						<img src="img/facial-3.jpg" alt="">
 						<div class="text">
 							<h3>Ácido hialurónico</h3>
-							<!--<a href="#" data-featherlight="cirugia/facial-3.html" class="btn btn-main btn-flat waves-effect waves-button">Más información</a>-->
-							<a class="btn btn-main btn-flat btn-disabled">Más información</a>
+							<a href="#" data-featherlight="cirugia/facial-3.html" class="btn btn-main btn-flat waves-effect waves-button">Más información</a>
 						</div>
 					</div>
 				</div>
@@ -373,7 +372,7 @@
 						<h4 class="main-title">Formulario de contacto</h4>
 						<div class="contact-form" id="contact-form">
 							<div class="contact-form-body">
-								<input name="contact-name" type="text" placeholder="Nombre" required="true" autofocus>
+								<input name="contact-name" type="text" placeholder="Nombre" required="true">
 								<input name="contact-email" type="email" placeholder="Email" required="true">
 								<input name="contact-tel" type="tel" placeholder="Teléfono">
 								<textarea name="contact-msg" placeholder="Su mensaje..." required="true"></textarea>
