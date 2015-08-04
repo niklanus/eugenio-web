@@ -255,9 +255,8 @@
 					<div class="cirugia-item">
 						<img src="img/estetica-6.jpg" alt="">
 						<div class="text">
-							<h3>Liposucción</h3>
-							<!--<a href="#" data-featherlight="cirugia/estetica-6.html" class="btn btn-main btn-flat waves-effect waves-button">Más información</a>-->
-							<a class="btn btn-main btn-flat btn-disabled">Más información</a>
+							<h3>Lipoaspiracion</h3>
+							<a href="#" data-featherlight="cirugia/estetica-6.html" class="btn btn-main btn-flat waves-effect waves-button">Más información</a>
 						</div>
 					</div>
 					<div class="cirugia-item">
