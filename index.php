@@ -22,12 +22,16 @@
 	<header>
 		<div class="info-bar">
 			<ul>
-				<li>
-					<p><i class="icon_house"></i>Juncal 673, CABA</p>
+				<li class="cards">
+					<span class="visa"></span>
+					<span class="master"></span>
+					<span class="amex"></span>
+					<span class="diners"></span>
+					<span class="cabal"></span>
 				</li>
 				<li>
-					<!--<p><i class="icon_phone"></i>(011) 4816-1950&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">•</span>&nbsp;&nbsp;4813-3583</p>-->
-					<p><i class="icon_phone"></i>(+54 9) 11-3393-3147</p>
+					<p><a href="tel:+541143113825" title="Consultorio"><i class="icon_phone"></i>4311-3825</a></p>
+					<p><a href="tel:+541133933147" title="Celular"><i class="icon_mobile"></i>11-3393-3147</a></p>
 				</li>
 				<li>
 					<a class="btn info-bar-cta smooth-offset" href="#anchor-contacto">Hacer una consulta</a>
@@ -58,6 +62,7 @@
 			</li>
 			<li><a href="#anchor-sanatorios" class="smooth-offset waves-button waves-effect">Sanatorios</a></li>
 			<li><a href="#anchor-contacto" class="smooth-offset waves-button waves-effect">Contacto</a></li>
+			<li><a href="#anchor-contacto" class="smooth-offset waves-button waves-effect">Blog</a></li>
 		</ul>
 	</nav>
 
@@ -136,8 +141,21 @@
 					<p>Como parte de mi formacion participe durente 6 meses en el Centro de Excelencia para la Atencion del Quemado (CEPAQ) del Hospital Aleman a cargo de los Dres. Alberto Bolgiani y Fortunato Benaim.</p>
 					<p>En el año 2013 tuve la oportunidad de realizar un Fellowship en The Buncke Clinic (Institute for Plastic and Reconstructive Surgery, Hand Surgery, and Microsurgery) actualmente a cargo de Gregory M. Buncke, hijo de Harry J. Buncke considerado en todo el mundo como el "padre de la microcirugia".</p>
 					<p>Completé ademas el curso intensivo en técnicas microquirurgicas en el Moet Institute dictado por Zoltan Szabo quien desarrolla y perfecciona estas tecnicas desde sus comienzos en los años 60.</p>
+
+					<div class="about-logos">
+						<a href="http://www.ama-med.org.ar/" target="_blank">
+							<img src="img/logo-ama.png" alt="Asociación Médica Argentina" title="Asociación Médica Argentina">
+						</a>
+						<a href="http://www.scpba.org.ar/" target="_blank">
+							<img src="img/logo-scpba.png" alt="Sociedad de Cirugía Plástica de Buenos Aires" title="Sociedad de Cirugía Plástica de Buenos Aires">
+						</a>
+						<a href="http://www.microcirugiareconstructiva.com/" target="_blank">
+							<img src="img/logo-samr.png" alt="Sociedad Argentina de Microcirugía Reconstructiva" title="Sociedad Argentina de Microcirugía Reconstructiva">
+						</a>
+					</div>
 				</div>
 			</div>
+			
 			
 		</div>
 		<!--<div class="about-more">
@@ -387,11 +405,11 @@
 	
 	<footer>
 		<div class="container cf">
-			<div class="col-sm-7">
-				<p class="copy">© 2015 Eugenio Chouhy - Todos los derechos reservados.</p>
-			</div>
-			<div class="col-sm-5 niklanus">
-				<p><a href="http://niklanus.com.ar" target="_blank"><strong>Nik Lanús</strong><br>diseño web</a></p>
+			<p class="copy">© 2015 Eugenio Chouhy - Todos los derechos reservados.</p>
+			<div class="footer-social">
+				<a href="#" class="facebook"><i class="social_facebook"></i></a>
+				<a href="#" class="twitter"><i class="social_twitter"></i></a>
+				<a href="#" class="linkedin"><i class="social_linkedin"></i></a>
 			</div>
 		</div>
 	</footer>

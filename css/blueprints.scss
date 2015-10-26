@@ -233,6 +233,17 @@ h4.main-title {
 		}
 	}
 
+	@media only screen and (max-width : 1100px) {
+		width: 180px;
+		height: 160px;
+
+		.logo-box-img {
+			width: 130px;
+			height: 85px;
+			background-size: 130px 85px;
+		}
+	}
+
 	@media only screen and (max-width : 640px) {
 		width: 100%;
 		height: auto;
@@ -287,20 +298,27 @@ h4.main-title {
 	z-index: 1;
 
 	ul {
-		padding: 0 45px 0 0;
+		padding: 0 15px 0 0 ;
 		margin: 0;
 
 		li {
 			display: inline-block;
-			margin-left: 20px;
+			margin: 0px 30px 0px 0px;
 
 			p {
 				line-height: 0;
-				margin: 0;
+				margin: 0 20px 0 0;
+				display: inline-block;
 
 				i {
 					font-size: 1.1em;
 					margin-right: 10px;
+					position: relative;
+					top: 2px;
+				}
+
+				&:last-child {
+					margin-right: 0;
 				}
 			}
 		}
@@ -310,7 +328,61 @@ h4.main-title {
 		}
 	}
 
-	@media only screen and (max-width : 900px) {
+	a {
+		color: white;
+	}
+
+	.cards {
+		position: relative;
+		top: 5px;
+		margin-right: 30px;
+
+		span {
+			width: 40px;
+			height: 24px;
+			display: inline-block;
+			background-size: 40px 24px;
+			margin: 0 0 0 2px;
+
+			&.visa {
+				background-image: url(../img/card-visa.png);
+
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+					background-image: url(../img/card-visa@2x.png);
+				}
+			}
+			&.master {
+				background-image: url(../img/card-master.png);
+
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+					background-image: url(../img/card-master@2x.png);
+				}
+			}
+			&.amex {
+				background-image: url(../img/card-amex.png);
+
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+					background-image: url(../img/card-amex@2x.png);
+				}
+			}
+			&.diners {
+				background-image: url(../img/card-diners.png);
+
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+					background-image: url(../img/card-diners@2x.png);
+				}
+			}
+			&.cabal {
+				background-image: url(../img/card-cabal.png);
+
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+					background-image: url(../img/card-cabal@2x.png);
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : 960px) {
 		padding: 14px 0;
 
 		ul li {
@@ -324,6 +396,10 @@ h4.main-title {
 
 		.info-bar-cta {
 			margin-top: 14px;
+		}
+
+		.cards {
+			display: none;
 		}
 	}
 
@@ -363,15 +439,15 @@ nav {
 	@include hover-slow;
 
 	.nav-items {
-		width: 880px;
+		width: 968px;
 		float: right;
 		padding: 0;
 		margin: 0;
 		position: relative;
 		left: 8px;
 
-		@media only screen and (max-width : 1160px) {
-			width: 762px;
+		@media only screen and (max-width : 1250px) {
+			width: 832px;
 		}
 
 		@media only screen and (max-width : 1023px) {
@@ -396,7 +472,7 @@ nav {
 					background-color: $blue;
 				}
 
-				@media only screen and (max-width : 1160px) {
+				@media only screen and (max-width : 1250px) {
 					padding: 30px 16px;
 					font-size: 0.9em;
 				}
@@ -443,7 +519,7 @@ nav {
 
 	.nav-items {
 		//display: none;
-		max-height: 250px;
+		max-height: 290px;
 		background-clip: padding-box;
 		overflow: hidden;
 		clear: both;
@@ -480,7 +556,7 @@ nav {
 		}
 
 		&.height-extended {
-			max-height: 434px;
+			max-height: 486px;
 		}
 	}
 
@@ -1163,6 +1239,30 @@ section.testimonios {
 	}
 }
 
+.about-logos {
+	margin-top: 30px;
+
+	a {
+		display: inline-block;
+		margin-right: 30px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	@media only screen and (max-width : 480px) {
+		max-width: 460px;
+
+		img {
+			width: 100%;
+			max-width: 90px;
+			height: auto;
+			margin-bottom: 30px;
+		}
+	}
+}
+
 /*.about-more {
 	background: darken($blue,10);
 	color: white;
@@ -1344,5 +1444,41 @@ footer {
 			text-align: center;
 			margin-top: 25px;
 		}	
+	}
+}
+
+.footer-social {
+	float: right;
+	text-align: right;
+	position: relative;
+	top: -8px;
+
+	a {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		color: white;
+		float: left;
+		margin-left: 5px;
+		border-radius: 2px;
+		@include hover;
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		&.facebook {
+			background-color: #3b5998;
+		}
+
+		&.twitter {
+			background-color: #55acee;
+		}
+
+		&.linkedin {
+			background-color: #0077b5;
+		}
 	}
 }
