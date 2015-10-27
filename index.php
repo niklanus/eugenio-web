@@ -62,7 +62,7 @@
 			</li>
 			<li><a href="#anchor-sanatorios" class="smooth-offset waves-button waves-effect">Sanatorios</a></li>
 			<li><a href="#anchor-contacto" class="smooth-offset waves-button waves-effect">Contacto</a></li>
-			<li><a href="#anchor-contacto" class="smooth-offset waves-button waves-effect">Blog</a></li>
+			<li><a href="http://blog.eugeniochouhy.com" target="_blank" class="smooth-offset waves-button waves-effect">Blog</a></li>
 		</ul>
 	</nav>
 
