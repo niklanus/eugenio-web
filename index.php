@@ -407,9 +407,9 @@
 		<div class="container cf">
 			<p class="copy">© 2015 Eugenio Chouhy - Todos los derechos reservados.</p>
 			<div class="footer-social">
-				<a href="#" class="facebook"><i class="social_facebook"></i></a>
-				<a href="#" class="twitter"><i class="social_twitter"></i></a>
-				<a href="#" class="linkedin"><i class="social_linkedin"></i></a>
+				<a href="https://www.facebook.com/dreugeniochouhy" class="facebook"><i class="social_facebook"></i></a>
+				<a href="https://twitter.com/eugeniochouhy" class="twitter"><i class="social_twitter"></i></a>
+				<a href="https://ar.linkedin.com/in/eugenio-chouhy-0b618a73" class="linkedin"><i class="social_linkedin"></i></a>
 			</div>
 		</div>
 	</footer>
