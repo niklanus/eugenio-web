@@ -393,7 +393,7 @@
 								<input name="contact-email" type="email" placeholder="Email" required="true">
 								<input name="contact-tel" type="tel" placeholder="Teléfono">
 								<textarea name="contact-msg" placeholder="Su mensaje..." required="true"></textarea>
-								<input class="btn waves-float" id="contact-submit" type="submit" value="Enviar" name="Submit">
+								<input class="btn waves-float" id="contact-submit" type="submit" value="Enviar" name="Submit" onClick="ga('send', 'event', 'boton', 'click', 'formulario');">
 							</div>
 						</div>
 					</div>
